@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54">
+
+        <!-- Outer Soft Glow Shadow for Graduation Cap -->
+        <path
+            android:fillColor="#30000000"
+            android:pathData="M 54,26 L 84,36 L 54,46 L 24,36 Z" />
+
+        <!-- Skull Cap Base under Mortarboard -->
+        <path
+            android:fillColor="#E0E7FF"
+            android:pathData="M 36,39 C 36,49 72,49 72,39 L 72,43 C 72,51 36,51 36,43 Z" />
+
+        <!-- Main Graduation Cap Diamond (Mortarboard Top) -->
+        <path android:pathData="M 54,23 L 84,34 L 54,45 L 24,34 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="24"
+                    android:startY="23"
+                    android:endX="84"
+                    android:endY="45"
+                    android:type="linear">
+                    <item android:offset="0.0" android:color="#FFFFFFFF" />
+                    <item android:offset="1.0" android:color="#FFE0E7FF" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Cap Edge Outline -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#818CF8"
+            android:strokeWidth="1.5"
+            android:pathData="M 54,23 L 84,34 L 54,45 L 24,34 Z" />
+
+        <!-- Gold Button on Cap Center -->
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M 54,34 m -2.5,0 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0" />
+
+        <!-- Gold Tassel Ribbon -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#F59E0B"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:pathData="M 54,34 L 78,34 L 80,48" />
+
+        <!-- Gold Tassel Fringe -->
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M 77,47 L 83,47 L 81,56 L 79,56 Z" />
+
+        <!-- Smart Attendance Badge Outer Glow Circle -->
+        <path
+            android:fillColor="#3522C55E"
+            android:pathData="M 54,64 m -22,0 a 22,22 0 1,0 44,0 a 22,22 0 1,0 -44,0" />
+
+        <!-- Smart Attendance Badge Main Circle -->
+        <path android:pathData="M 54,64 m -18,0 a 18,18 0 1,0 36,0 a 18,18 0 1,0 -36,0">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="36"
+                    android:startY="46"
+                    android:endX="72"
+                    android:endY="82"
+                    android:type="linear">
+                    <item android:offset="0.0" android:color="#FF22C55E" />
+                    <item android:offset="1.0" android:color="#FF15803D" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Gold Border Ring on Badge -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FDE047"
+            android:strokeWidth="2"
+            android:pathData="M 54,64 m -18,0 a 18,18 0 1,0 36,0 a 18,18 0 1,0 -36,0" />
+
+        <!-- Premium White Verification Checkmark -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M 44,64 L 51,71 L 64,57" />
+
+    </group>
+</vector>

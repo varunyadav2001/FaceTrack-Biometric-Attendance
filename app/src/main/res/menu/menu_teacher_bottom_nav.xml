@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_teacher_home"
+        android:icon="@drawable/ic_dashboard"
+        android:title="HOME" />
+    <item
+        android:id="@+id/nav_teacher_attendance"
+        android:icon="@drawable/ic_student"
+        android:title="STUDENTS / CLASSES" />
+    <item
+        android:id="@+id/nav_teacher_qr"
+        android:icon="@drawable/ic_qr_code"
+        android:title="QR GENERATOR" />
+    <item
+        android:id="@+id/nav_teacher_leaves"
+        android:icon="@drawable/ic_calendar"
+        android:title="REGISTER / CALENDAR" />
+    <item
+        android:id="@+id/nav_teacher_profile"
+        android:icon="@drawable/ic_person"
+        android:title="PROFILE" />
+</menu>

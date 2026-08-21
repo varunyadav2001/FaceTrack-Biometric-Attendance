@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Attendance_system" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorPrimaryContainer">#E0E7FF</item>
+        <item name="colorSecondaryContainer">#E0E7FF</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.Attendance_system" parent="Base.Theme.Attendance_system" />
+
+    <!-- Role Custom Navigation Active Indicators -->
+    <style name="AdminActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="color">#EDE9FE</item>
+    </style>
+
+    <style name="TeacherActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="color">#D1FAE5</item>
+    </style>
+
+    <style name="StudentActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="color">#FFE4E6</item>
+    </style>
+
+    <style name="CustomActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="color">#E0E7FF</item>
+    </style>
+
+    <style name="NavTextActive">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#1E3A8A</item>
+    </style>
+
+    <style name="NavTextInactive">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#64748B</item>
+    </style>
+</resources>
