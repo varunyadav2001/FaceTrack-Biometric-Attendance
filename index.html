@@ -29,47 +29,45 @@
 
         .bg-circle1, .bg-circle2 {
             position: absolute;
-            width: 320px;
-            height: 320px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
-            filter: blur(100px);
+            filter: blur(90px);
             z-index: 0;
             animation: floatGlow 8s infinite alternate ease-in-out;
         }
 
         .bg-circle1 {
             background: #00f2fe;
-            top: 10%;
+            top: 15%;
             left: 15%;
         }
 
         .bg-circle2 {
             background: #4facfe;
-            bottom: 10%;
+            bottom: 15%;
             right: 15%;
             animation-delay: -4s;
         }
 
         @keyframes floatGlow {
             0% { transform: translateY(0) scale(1); }
-            100% { transform: translateY(40px) scale(1.15); }
+            100% { transform: translateY(30px) scale(1.1); }
         }
 
         .card-wrapper {
             position: relative;
-            padding: 3px;
+            padding: 2px;
             border-radius: 28px;
-            background: linear-gradient(135deg, rgba(0, 242, 254, 0.6), rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.7));
+            background: linear-gradient(135deg, rgba(0, 242, 254, 0.6), rgba(79, 172, 254, 0.2), rgba(0, 242, 254, 0.6));
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 242, 254, 0.2);
             z-index: 1;
             width: 90%;
-            max-width: 620px;
-            animation: cardAppear 1s ease-out;
+            max-width: 600px;
         }
 
         .container {
-            background: rgba(13, 15, 29, 0.85);
-            backdrop-filter: blur(25px);
+            background: rgba(13, 15, 29, 0.9);
             border-radius: 26px;
             text-align: center;
             padding: 45px 30px;
@@ -79,15 +77,15 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 90px;
-            height: 90px;
-            background: linear-gradient(135deg, rgba(0, 242, 254, 0.2), rgba(79, 172, 254, 0.1));
+            width: 85px;
+            height: 85px;
+            background: rgba(0, 242, 254, 0.1);
             border: 1px solid rgba(0, 242, 254, 0.4);
             border-radius: 22px;
             margin-bottom: 20px;
-            font-size: 42px;
+            font-size: 38px;
             color: #00f2fe;
-            box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
             animation: bounceIcon 3s infinite ease-in-out;
         }
 
@@ -97,12 +95,12 @@
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 34px;
             font-weight: 700;
             background: linear-gradient(90deg, #ffffff, #00f2fe, #4facfe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .badges {
@@ -117,9 +115,9 @@
             background: rgba(0, 242, 254, 0.1);
             border: 1px solid rgba(0, 242, 254, 0.3);
             color: #00f2fe;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
-            padding: 5px 14px;
+            padding: 6px 14px;
             border-radius: 20px;
         }
 
@@ -128,17 +126,14 @@
             font-size: 15px;
             line-height: 1.7;
             margin-bottom: 30px;
-            max-width: 480px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .download-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            padding: 16px 42px;
+            gap: 10px;
+            padding: 16px 40px;
             background: linear-gradient(90deg, #00f2fe, #4facfe);
             color: #05050e;
             text-decoration: none;
@@ -150,7 +145,7 @@
         }
 
         .download-btn:hover {
-            transform: translateY(-4px) scale(1.03);
+            transform: translateY(-3px) scale(1.02);
             box-shadow: 0 15px 35px rgba(0, 242, 254, 0.7);
         }
 
@@ -174,17 +169,11 @@
 
         .links a:hover {
             color: #ffffff;
-            text-shadow: 0 0 10px #00f2fe;
-        }
-
-        @keyframes cardAppear {
-            from { opacity: 0; transform: scale(0.94); }
-            to { opacity: 1; transform: scale(1); }
         }
 
         @media (max-width: 480px) {
-            .container { padding: 35px 20px; }
-            h1 { font-size: 28px; }
+            .container { padding: 30px 20px; }
+            h1 { font-size: 26px; }
             .tech-footer { flex-direction: column; gap: 10px; }
         }
     </style>
