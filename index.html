@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Android App • Official Download</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #080811;
+            color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .bg-circle1, .bg-circle2 {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: 0;
+            animation: floatGlow 8s infinite alternate ease-in-out;
+        }
+
+        .bg-circle1 {
+            background: #00f2fe;
+            top: 10%;
+            left: 15%;
+        }
+
+        .bg-circle2 {
+            background: #4facfe;
+            bottom: 10%;
+            right: 15%;
+            animation-delay: -4s;
+        }
+
+        @keyframes floatGlow {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(40px) scale(1.15); }
+        }
+
+        .card-wrapper {
+            position: relative;
+            padding: 3px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, rgba(0, 242, 254, 0.6), rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.7));
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 242, 254, 0.2);
+            z-index: 1;
+            width: 90%;
+            max-width: 620px;
+            animation: cardAppear 1s ease-out;
+        }
+
+        .container {
+            background: rgba(13, 15, 29, 0.85);
+            backdrop-filter: blur(25px);
+            border-radius: 26px;
+            text-align: center;
+            padding: 45px 30px;
+        }
+
+        .icon-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, rgba(0, 242, 254, 0.2), rgba(79, 172, 254, 0.1));
+            border: 1px solid rgba(0, 242, 254, 0.4);
+            border-radius: 22px;
+            margin-bottom: 20px;
+            font-size: 42px;
+            color: #00f2fe;
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);
+            animation: bounceIcon 3s infinite ease-in-out;
+        }
+
+        @keyframes bounceIcon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #ffffff, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            color: #00f2fe;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 20px;
+        }
+
+        .description {
+            color: #b4b9d0;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 42px;
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            color: #05050e;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 242, 254, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 15px 35px rgba(0, 242, 254, 0.7);
+        }
+
+        .tech-footer {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #79809c;
+            font-size: 13px;
+        }
+
+        .links a {
+            color: #00f2fe;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        .links a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #00f2fe;
+        }
+
+        @keyframes cardAppear {
+            from { opacity: 0; transform: scale(0.94); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 35px 20px; }
+            h1 { font-size: 28px; }
+            .tech-footer { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-circle1"></div>
+    <div class="bg-circle2"></div>
+
+    <div class="card-wrapper">
+        <div class="container">
+            <div class="icon-box">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <h1>My Android App</h1>
+
+            <div class="badges">
+                <span class="badge"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="badge"><i class="fa-solid fa-code"></i> XML</span>
+                <span class="badge"><i class="fa-solid fa-fire"></i> Firebase</span>
+            </div>
+
+            <p class="description">
+                A high-performance modern Android application developed with seamless Firebase backend integration and intuitive user interfaces.
+            </p>
+
+            <a class="download-btn" href="https://github.com/varunyadav2001/MyAndroidApp/releases/latest/download/app-debug.apk">
+                <i class="fa-solid fa-download"></i> Download App
+            </a>
+
+            <div class="tech-footer">
+                <span>Built by <b>Varun Vikram Yadav</b></span>
+                <div class="links">
+                    <a href="https://github.com/varunyadav2001" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/varun-yadav006" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
