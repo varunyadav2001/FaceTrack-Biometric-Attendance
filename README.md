@@ -5,9 +5,8 @@ A next-generation **AI-Powered Attendance Management Ecosystem** built for Andro
 ---
 
 ## 🚀 Quick Links & Live Demo
-* 🌐 **Official Landing Page:** [View Live Site](https://varunyadav2001.github.io/MyAndroidApp/)
-* 📥 **Download APK:** [Download Latest Version](https://github.com/varunyadav2001/MyAndroidApp/releases/latest/download/app-debug.apk)
-
+* 🌐 **Official Landing Page:** [View Live Site](https://varunyadav2001.github.io/FaceTrack-Biometric-Attendance/)
+* 📥 **Download APK:** [Download Latest Version](https://github.com/varunyadav2001/FaceTrack-Biometric-Attendance/releases/latest/download/app-debug.apk)
 ---
 
 ## 🌟 Unique Highlights
