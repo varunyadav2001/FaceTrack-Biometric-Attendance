@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Android App</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: #050505;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            padding: 50px 30px;
+            border: 1px solid #00cfff;
+            border-radius: 25px;
+            box-shadow: 0 0 35px rgba(0, 207, 255, 0.25);
+        }
+
+        .icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #00cfff;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #bbb;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #00cfff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(0, 207, 255, 0.6);
+        }
+
+        .tech {
+            margin-top: 30px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="icon">📱</div>
+
+        <h1>My Android App</h1>
+
+        <div class="subtitle">
+            Java • XML • Firebase
+        </div>
+
+        <p class="description">
+            A modern Android application developed using Java and XML
+            with Firebase backend integration.
+        </p>
+
+        <a
+            class="download-btn"
+            href="https://github.com/varunyadav2001/MyAndroidApp/releases/download/v1.0.0/app-debug.apk">
+            Download App
+        </a>
+
+        <div class="tech">
+            Android Studio | Java | XML | Firebase
+        </div>
+
+    </div>
+
+</body>
+</html>
