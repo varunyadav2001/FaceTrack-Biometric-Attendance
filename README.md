@@ -1,86 +1,116 @@
-# 📸 FaceTrack • Smart Biometric & Geofenced Attendance System
+# 🩸 SmartBlood • Smart Blood Donation & Emergency Management System
 
-A next-generation **AI-Powered Attendance Management Ecosystem** built for Android using **Java**, **XML**, and **Firebase**. It features real-time facial recognition with liveness detection, 200m GPS geofencing, dynamic QR sessions, and synchronized role-based dashboards for **Students**, **Teachers**, and **Admins**.
+A next-generation **Digital Blood Donation & Emergency Management Ecosystem** built for Android using **Java**, **XML**, and **Firebase**. It connects **Donors**, **Hospitals**, and **Blood Banks** through a unified platform for blood requests, emergency requirements, donation appointments, blood inventory, and real-time coordination.
 
 ---
 
 ## 🚀 Quick Links & Live Demo
-* 🌐 **Official Landing Page:** [View Live Site](https://varunyadav2001.github.io/FaceTrack-Biometric-Attendance/)
-* 📥 **Download APK:** [Download Latest Version](https://github.com/varunyadav2001/FaceTrack-Biometric-Attendance/releases/latest/download/app-debug.apk)
+
+* 🌐 **Official Landing Page:** [View Live Site](https://varunyadav2001.github.io/Blood_bank/)
+* 📥 **Download APK:** [Download Latest Version](https://github.com/varunyadav2001/Blood_bank/releases/download/v1.0.0/app-debug.apk)
+
 ---
 
 ## 🌟 Unique Highlights
 
-- 🔐 **Tri-Role Architecture:** Dedicated, protected workflows for Admin, Teacher, and Student.
-- 👤 **Duplicate-Proof Face Registration:** One-time face enrollment mapped strictly to a single account.
-- ⚡ **AI Liveness & Biometric Matching:** Anti-spoofing face verification with confidence scoring.
-- 📍 **GPS + 200m Geofencing:** Restricts punch-in/out strictly within registered premises.
-- ⏱️ **Automated Work-Hour Engine:** Auto-calculates hours and marks **Full Day / Half Day / Pending**.
-- 🔄 **Interactive Swipe-to-Punch UI:** Smooth card-swipe workflow for logging check-ins and check-outs.
-- 📱 **Dynamic QR Attendance:** Teacher-generated dynamic QR with real-time session expiration.
-- 📝 **End-to-End Leave Lifecycle:** Digital request, real-time approval/rejection, and auto-attendance sync.
-- 📊 **Real-Time Synchronized Monitoring:** Live updates across all dashboards via Cloud Firestore.
+- 🔐 **Multi-Role Architecture:** Dedicated workflows for Donors, Hospitals, and Blood Banks.
+- 🩸 **Smart Blood Group Management:** Donor profiles maintain blood group and donation information.
+- 🚨 **Emergency Blood Requests:** Hospitals can create urgent blood requirements and coordinate with eligible donors.
+- 🏦 **Blood Bank Discovery:** Users can search and connect with available blood banks.
+- 📅 **Donation Appointment Booking:** Donors can schedule blood donation appointments with date and time.
+- 📊 **Real-Time Blood Inventory:** Blood banks can manage available blood stock and inventory.
+- 🔄 **Request Management:** Hospitals and blood banks can manage blood requests and approvals.
+- ☁️ **Firebase Integration:** Authentication and cloud-based real-time data management.
 
 ---
 
 ## ✨ Comprehensive Features Breakdown
 
 ### 🔐 1. Authentication & Security
-* **Role-Based Authentication:** Dedicated credentials and automatic dashboard routing for Admin, Teacher, and Student.
-* **Protected Dashboard Routing:** Prevents unauthorized cross-dashboard navigation and secures active sessions.
-* **Multi-Factor Attendance Validation:** Attendance is logged only when authenticated user, valid registered face, liveness test, and GPS geofence criteria are simultaneously met.
 
-### 👤 2. Biometric & Face Recognition Engine
-* **One-Time Face Enrollment:** Detects and registers unique face vectors, throwing instant errors on duplicate attempts.
-* **Face-Verified Punch In & Punch Out:** Mandatory biometric check on both entry and exit to eliminate proxy logging.
-* **Liveness & Match Verification:** Camera-based identity matching with detailed verification metadata (Face snapshot, match score, timestamp).
+* **Role-Based Authentication:** Dedicated login and registration workflows for Donors, Hospitals, and Blood Banks.
+* **Protected Dashboard Routing:** Users are directed to the appropriate dashboard according to their role.
+* **Firebase Authentication:** Secure authentication and user account management using Firebase.
+* **Session Management:** Maintains authenticated user sessions across the application.
 
-### 📍 3. Location & Automated Time Tracking
-* **200m Geofence Validation:** Compares live GPS coordinates with institution/company location before granting punch access.
-* **Smart Working-Hour Calculation:**
-  * **8+ Hours:** Categorized as **Full Day**.
-  * **< 8 Hours:** Categorized as **Half Day**.
-  * Auto-assigns **Punch Out Pending** status until day close.
-* **Swipe-Based Interaction:** Tactile swipe cards for instant Punch In / Punch Out actions.
+### 👤 2. Donor Management
 
-### 📱 4. Dynamic QR Attendance
-* **Teacher Session Generator:** Generates time-sensitive, single-session QR codes.
-* **Anti-Fraud QR Scanning:** Expiration timers, duplicate scan blockers, and class validation algorithms.
-* **Live Register Updates:** Real-time visual feedback on teacher screens as students scan in.
+* **Donor Registration & Login:** Donors can create and manage their accounts.
+* **Blood Group Profile:** Store and manage donor blood group information.
+* **Blood Bank Search:** Find suitable blood banks for donation.
+* **Donation Appointment:** Book donation appointments with selected date and time.
+* **Upcoming Donations:** View scheduled donation appointments.
+* **Donation History:** Maintain a record of previous donations.
+* **Emergency Response:** Donors can respond to emergency blood requirements.
+* **Lifesaving Impact:** Track the contribution made through blood donations.
 
-### 📝 5. Digital Leave & Management Workflow
-* **Leave Management:** Students submit leave requests with date ranges; Teachers approve/reject with instant status reflection in attendance logs.
-* **Teacher Management Hub:** Manage assigned student rosters, daily registers, leave requests, and self-attendance.
-* **Admin Centralized Command:** Complete control over departments, subjects, staff/student rosters, live logs, and aggregated statistics.
-* **Attendance History & Logs:** Detailed audit trail with timestamps, durations, statuses, and verification history.
+### 🏥 3. Hospital Blood Request Management
+
+* **Hospital Registration & Login:** Secure hospital account management.
+* **Blood Requests:** Hospitals can create blood requirements based on blood group and quantity.
+* **Emergency Requests:** Create urgent emergency blood requests.
+* **Request Tracking:** Track submitted blood requests and their status.
+* **Blood Bank Search:** Find suitable blood banks for required blood groups.
+* **Donor Response Tracking:** Monitor responses from eligible donors.
+* **Request Management:** Manage active, approved, fulfilled, and pending requests.
+
+### 🏦 4. Blood Bank Management
+
+* **Blood Bank Registration & Login:** Dedicated blood bank authentication.
+* **Blood Inventory:** Manage available blood groups and stock quantities.
+* **Hospital Requests:** View incoming blood requirements from hospitals.
+* **Request Approval:** Approve and process suitable blood requests.
+* **Stock Transfers:** Manage blood stock movement and availability.
+* **Donor Appointments:** View and manage scheduled donor appointments.
+* **Donation Completion:** Update inventory after successful blood donation.
+* **Inventory Monitoring:** Maintain an organized view of available blood stock.
+
+### 🚨 5. Emergency Blood Workflow
+
+* **Emergency Request Creation:** Hospitals can create urgent blood requirements.
+* **Active Emergency:** Emergency requests remain visible until fulfilled.
+* **Eligible Donors:** Suitable donors can view emergency requirements.
+* **Donor Response:** Donors can select **"I'm Available"** to respond.
+* **Hospital Coordination:** Hospitals can view donor responses.
+* **Requirement Fulfillment:** Blood requirement can be marked fulfilled after coordination.
+
+### 📅 6. Blood Donation Booking
+
+* **Blood Bank Selection:** Select a preferred blood bank.
+* **Appointment Date:** Choose a suitable donation date.
+* **Appointment Time:** Select an available time.
+* **Appointment Tracking:** View upcoming appointments.
+* **Donation History:** Maintain completed donation records.
+* **Donation Status:** Track appointment and donation completion status.
+
+### 📊 7. Real-Time Management
+
+* **Firebase Firestore:** Cloud-based database for application data.
+* **Real-Time Updates:** Keep blood requests, appointments, and inventory synchronized.
+* **Cloud Data Management:** Centralized storage of donor, hospital, blood bank, and request information.
+* **Live Coordination:** Supports communication between the three major roles.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🔄 Emergency Blood Workflow
 
-| Component | Technology / Library |
-| :--- | :--- |
-| **Mobile Platform** | Native Android (Java) |
-| **User Interface** | XML, Material Components, Custom Animations |
-| **Backend & Auth** | Google Firebase Authentication |
-| **Cloud Database** | Cloud Firestore (Real-Time Sync) |
-| **Location Services** | Google Play Services Location API (GPS / Geofencing) |
-| **Camera & Vision** | CameraX API, Machine Learning Face Detection |
-| **Deployment** | GitHub Releases & GitHub Pages |
-
----
-
-## 📲 Installation & Setup
-
-1. Download the latest `.apk` from the [Download APK](https://github.com/varunyadav2001/MyAndroidApp/releases/latest/download/app-debug.apk) link.
-2. Tap the downloaded file on your Android device.
-3. Enable **"Allow from this source"** if prompted by Android security settings.
-4. Open the app, log in with your assigned role, and complete initial face enrollment.
-
----
-
-## 👨‍💻 Developer & Maintainer
-
-**Varun Vikram Yadav**
-* 🐙 **GitHub:** [@varunyadav2001](https://github.com/varunyadav2001)
-* 💼 **LinkedIn:** [Varun Yadav](https://www.linkedin.com/in/varun-yadav006)
+```text
+🏥 HOSPITAL
+      │
+      ▼
+🚨 Create Emergency Blood Request
+      │
+      ▼
+🔥 Active Emergency
+      │
+      ▼
+👤 Eligible Donors
+      │
+      ▼
+✅ I'm Available
+      │
+      ▼
+🏥 Hospital Receives Response
+      │
+      ▼
+🩸 Blood Requirement Fulfilled
